@@ -5,6 +5,7 @@ executable(
 		'src/Main.vala',
 		'src/Window.vala',
 		'src/HeaderBar.vala',
+		'src/TextView.vala',
 		'src/Application.vala',
 		dependencies: [
 			dependency('gtk+-3.0'),

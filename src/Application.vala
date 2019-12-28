@@ -8,7 +8,7 @@ public class Application : Gtk.Application {
 	}
 
 	protected override void activate () {
-		var window = new Quran.Window(this);
+		var window = new Majeed.Window(this);
 
 		add_window(window);
 	}
