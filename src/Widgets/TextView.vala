@@ -11,9 +11,9 @@ public class Majeed.TextView : Gtk.TextView {
         tagTable = new Gtk.TextTagTable();
         textBuffer = new Gtk.TextBuffer(tagTable);
         textBuffer.set_text("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ");
-		amiriFont = new Gtk.TextTag();
-		amiriFont = textBuffer.create_tag(null, "font", "Amiri Quran 30");
-		textBuffer.get_bounds(out start, out end);
+	amiriFont = new Gtk.TextTag();
+	amiriFont = textBuffer.create_tag(null, "font", "Amiri Quran 30");
+	textBuffer.get_bounds(out start, out end);
         textBuffer.apply_tag(amiriFont, start, end);
         textBuffer.changed.connect(updateTextView);
         set_buffer(textBuffer);
