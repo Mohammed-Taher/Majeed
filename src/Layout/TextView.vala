@@ -1,4 +1,4 @@
-public class Majeed.TextView : Gtk.TextView {
+public class Majeed.Layout.TextView : Gtk.TextView {
     private Gtk.TextTagTable tagTable;
     private Gtk.TextBuffer textBuffer;
     private Gtk.TextTag amiriFont;
@@ -6,7 +6,7 @@ public class Majeed.TextView : Gtk.TextView {
     private Gtk.TextIter end;
 
     construct {
-        //  set_editable(false);
+        set_editable(false);
         set_wrap_mode(Gtk.WrapMode.WORD);
         tagTable = new Gtk.TextTagTable();
         textBuffer = new Gtk.TextBuffer(tagTable);

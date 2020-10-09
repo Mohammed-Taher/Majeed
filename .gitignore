@@ -6,3 +6,5 @@ _build/
 .flatpak-builder/
 *~
 *.swp
+test.vala
+test

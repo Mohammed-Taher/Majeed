@@ -4,9 +4,11 @@ executable(
 		
 		'Application.vala',
 
-		'Widgets/Window.vala',
-		'Widgets/HeaderBar.vala',
-		'Widgets/TextView.vala',
+		'Layout/Window.vala',
+		'Layout/HeaderBar.vala',
+		'Layout/TextView.vala',
+		'Layout/Pane.vala',
+
 		dependencies: [
 			dependency('gtk+-3.0'),
 			dependency('gio-2.0')
